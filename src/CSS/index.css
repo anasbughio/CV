@@ -1,0 +1,173 @@
+/* src/index.css */
+
+/* --- General Reset and Page Setup --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Light subtle background */
+}
+
+.cv-app-container {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Important for clean edges */
+    
+}
+
+/* --- Intro Section Styling (Header) --- */
+.intro-section {
+    color: white;
+    background-color: #3f51b5; /* Primary Blue Background */
+    padding: 30px;
+}
+
+.header-bg {
+    padding: 40px 30px 20px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.profile-picture {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-info h1 {
+    margin: 0;
+    font-size: 2.8em;
+    font-weight: 600;
+}
+
+.header-info .title {
+    margin: 5px 0 20px;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* Download/Hire Buttons */
+.actions button {
+    padding: 10px 20px;
+    margin-right: 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.download-btn {
+    background-color: white;
+    color: #3f51b5;
+    border: 2px solid white;
+}
+.download-btn:hover { background-color: #e0e0e0; }
+
+.hire-btn {
+    background-color: #4caf50; /* Green highlight */
+    color: white;
+}
+.hire-btn:hover { background-color: #43a047; }
+
+
+/* Contact Details & About Me from Intro */
+.contact-details {
+    background-color: white;
+    color: #333;
+    padding: 20px 30px;
+    border-top: 1px solid #eee;
+}
+
+.contact-details h3 {
+    color: #3f51b5;
+    margin-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    font-size: 1.2em;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px 20px;
+    font-size: 0.95em;
+}
+.contact-grid p strong {
+    color: #555;
+    font-weight: normal;
+}
+
+
+/* --- Main Content Sections --- */
+.cv-main-content {
+    padding: 30px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+section:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+h3 {
+    color: #3f51b5;
+    font-size: 1.5em;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 8px;
+    margin-top: 0;
+    font-weight: 500;
+}
+
+/* --- Professional Skills Section --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+}
+
+.skill-item {
+    margin-bottom: 18px;
+}
+
+.skill-name {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+.skill-bar-container {
+    background-color: #e0e0e0;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-bar-fill {
+    height: 100%;
+    background-color: #4caf50; /* Green bar */
+    transition: width 0.8s ease-out;
+}
+/* Ensure the component structure you provided is used to render skill names */
+.professional-skills-section h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #555;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 5px;
+}
